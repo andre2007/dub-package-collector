@@ -1,0 +1,10 @@
+{
+	"authors": [
+		"Andre Pany"
+	],
+	"copyright": "Copyright © 2020, Andre Pany",
+	"description": "Collects source code files of dub package and relevant dependencies.",
+	"license": "BSL-1.0",
+	"name": "dub-package-collector",
+	"targetName": "dpc"
+}
