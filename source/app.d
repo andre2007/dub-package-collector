@@ -43,7 +43,7 @@ void main(string[] args)
 private void createFolder(DubProject dubProject, string folderPath)
 {
 	foreach (entry; dirEntries(dubProject.rootPackage.path,
-			"*.{d,di,dpp,json,sdl}", SpanMode.breadth))
+			"*.{d,di,dpp,json,sdl}", SpanMode.breadth).array)
 	{
 		string newFilePath = buildPath(folderPath, entry.name[dubProject.rootPackage.path.length .. $]);
 		if (!exists(newFilePath.dirName))
